@@ -20,7 +20,7 @@ function Get-GroupMembers {
 
 $ouPath = "OU=Group,OU=Company Org,DC=DOMAIN,DC=COM"
 $outputFileGroupsOverview = "C:\path\to\AD_OU_Groups.csv"
-$outputFileGroupsMembers = "C:\path\to\AD_OU_Groups_With_Members.txt"
+$outputFileGroupsMembers = "C:\path\to\Get_AD_OU_Groups_And_Members.txt"
 
 $groups = Get-ADGroup -Filter * -SearchBase "$ouPath" | Sort-Object SamAccountName
 $groups | Select-Object name, SamAccountName, DistinguishedName | Export-Csv -Path $outputFileGroupsOverview -NoTypeInformation -Force
