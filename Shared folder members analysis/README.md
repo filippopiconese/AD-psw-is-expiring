@@ -6,12 +6,12 @@ This script is designed to retrieve the users who have access to folders within 
 ### Variables
 
 Set the needed variables:
-- $sharePath -> the share path to analyse
-- $outputFile -> the path where to save the results
+- $sharePath -> the share path to analyse.
+- $outputFile -> the path where to save the results.
 
 ### Functions
 
-- Get-FolderUsers -> It is the main function that contains all the features of the program
+- Get-FolderUsers -> analyzes a specified folder and logs users with access to it in an output file.
 
 ### Execution
 

@@ -6,18 +6,18 @@ This script helps the company to notify users when the AD password is about to e
 ### Variables
 
 Set the needed variables:
-- $verbose -> needed if you want to add the password requirements to the email
-- $senderEmailAddress -> who sends the email
-- $senderPassword -> password of the email sender
-- $ccEmailAddress -> this CC email is needed if the password expires within 5 days
-- $SMTPserver -> set smtp server
-- $DN -> set domain name of the users
+- $verbose -> needed if you want to add the password requirements to the email.
+- $senderEmailAddress -> who sends the email.
+- $senderPassword -> password of the email sender.
+- $ccEmailAddress -> this CC email is needed if the password expires within 5 days.
+- $SMTPserver -> set smtp server.
+- $DN -> set domain name of the users.
 
 ### Functions
 
-- PreparePasswordPolicyMail -> write password requirements
-- PrepareMailBody -> prepare the body
-- SendMail -> set the subject and send the email
+- PreparePasswordPolicyMail -> write password requirements.
+- PrepareMailBody -> prepare the body.
+- SendMail -> set the subject and send the email.
 
 ### Execution
 

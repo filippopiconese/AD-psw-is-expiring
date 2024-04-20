@@ -20,7 +20,7 @@ Set the needed variables:
 - It sorts the groups alphabetically based on their SAM account names.
 - It exports the overview of groups (name, SAM account name, distinguished name) to a CSV file using Export-Csv.
 - It iterates through each group.
-    - For each group, it calls the Get-GroupMembers function to retrieve its members and saves them to the text file.
+- For each group, it calls the Get-GroupMembers function to retrieve its members and saves them to the text file.
 
 ### Output
 The output consists of two files:
