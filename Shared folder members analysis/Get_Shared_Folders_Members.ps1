@@ -39,6 +39,6 @@ function Get-FolderUsers {
 }
 
 $sharePath = "\\SRV-ME\sharename"
-$outputFile = "C:\path\to\log_file.txt"
+$outputFile = "C:\path\to\Shared_Folders_Members.txt"
 
 Get-FolderUsers -FolderPath $sharePath -outputFile $outputFile
