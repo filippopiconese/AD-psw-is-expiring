@@ -1,11 +1,11 @@
 # Program objectives
-This piece of code helps the company to notify users when the AD password is about to expire.
+This script helps the company to notify users when the AD password is about to expire.
 
 ## Program phases
 
 ### Variables
 
-set the needed variables:
+Set the needed variables:
 - $verbose -> needed if you want to add the password requirements to the email
 - $senderEmailAddress -> who sends the email
 - $senderPassword -> password of the email sender
@@ -30,3 +30,6 @@ set the needed variables:
 - It checks if delta falls within certain threshold days (30, 25, 20, 15, 10, or 5 days before expiry).
 - If the number of days falls within the specified threshold and the user's password doesn't expire, it prepares an email body using the PrepareMailBody function and sends an email notification to the user's email address using the SendMail function.
 - If the number of days is within 5 days of expiry, it sets a flag ($addCCUser) to TRUE to set a carbon copy (CC) email.
+
+### Output
+An email is sent to the recipient and any cc emails if the AD password expires soon.
